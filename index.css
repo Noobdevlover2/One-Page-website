@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*header start*/
+.header {
+  background: rgb(24, 181, 213);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: block;
+}
+ul li a:hover {
+  background: white;
+  color: rgb(24, 181, 213);
+  border-radius: 10px;
+  transition: 0.9s;
+}
+
+/*header End*/
+/*Header Responsiveness Start*/
+@media screen and (min-width: 600px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .right-side {
+    padding-top: 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  ul li {
+    display: block;
+  }
+}
+/*Header Responsiveness End*/
+/*header bio start*/
+.header-bio {
+  background: rgb(24, 181, 213);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.left-side p {
+  font-size: 20px;
+  color: aliceblue;
+}
+
+button {
+  background: transparent;
+  border: 3px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: white;
+  transition: 0.9s;
+}
+
+/*header bio End*/
+/*header bio Responsiveness  start*/
+@media screen and (max-width: 600px) {
+  .header-bio {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  .join {
+    position: absolute;
+    top: 75%;
+    left: 10px;
+  }
+}
+/*header bio Responsiveness  start*/
+.service-title {
+  text-align: center;
+  margin: 20px;
+}
+
+.service-card {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.service-card > div {
+  text-align: center;
+  box-shadow: 3px 2px 4px purple;
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.service-card > div:hover {
+  box-shadow: 5px 5px 5px purple;
+  transition: 0.8s;
+}
+
+.contact {
+  border: 2px solid purple;
+}
+
+/*service responsive start*/
+@media screen and (max-width: 600px) {
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*service responsive End*/
+/*<!--Reviews Start-->*/
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  border: 3px solid rgb(24, 181, 213);
+}
+
+.re-info {
+  padding: 10%;
+}
+
+.rev-btn {
+  background: rgb(24, 181, 213);
+}
+
+.rev-btn:hover {
+  border: 2px solid rgb(24, 181, 213);
+}
+
+@media screen and (max-width: 600px) {
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*<!--Reviews End-->*/
+/*about*/
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.rev-btn {
+  background: rgb(24, 181, 213);
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+}
+/*about*/
+.footer {
+  text-align: center;
+  background: rgb(24, 181, 213);
+  padding: 20px;
+}
+
+input[type=email] {
+  border: none;
+  padding: 10px;
+  background: rgb(24, 181, 213);
+  text-align: center;
+}
+
+hr {
+  width: 50%;
+  text-align: center;
+}
+
+.footer > div {
+  padding: 20px;
+}
